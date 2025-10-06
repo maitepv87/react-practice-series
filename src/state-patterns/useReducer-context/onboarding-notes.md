@@ -18,7 +18,7 @@ Think of this as a lightweight alternative to Redux—perfect when your app need
 
 ## Folder structure
 
-Here’s how the floder is organized:
+Here’s how the folder is organized:
 
 ```
 useReducer-context/
