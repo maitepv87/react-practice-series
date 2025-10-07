@@ -34,7 +34,7 @@ useReducer-context/
 │   ├── AddToCartButton.tsx     ← UI button to add items to cart
 │   ├── CartSummary.tsx         ← Displays total and clear cart button
 │   └── CartList.tsx            ← Lists items in the cart with remove buttons
-├── CartApp.tsx                 ← Entry point that wires everything together
+├── ContextApp.tsx                 ← Entry point that wires everything together
 ├── README.md                   ← Technical overview and usage
 └── onboarding-notes.md         ← This file
 

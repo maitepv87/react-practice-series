@@ -7,6 +7,9 @@ export const Home = () => (
       <li>
         <Link to="/useReducer-context">useReducer + useContext</Link>
       </li>
+      <li>
+        <Link to="/redux-toolkit">Redux-Toolkit</Link>
+      </li>
     </ul>
   </main>
 );

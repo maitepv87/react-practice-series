@@ -1,13 +1,13 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import { Home } from "./routes/Home";
-import { UseReducerDemo } from "./routes/UseReducerDemo";
+import { Home, UseReducerDemo, UseReduxDemo } from "./routes";
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/useReducer-context" element={<UseReducerDemo />} />
+      <Route path="/redux-toolkit" element={<UseReduxDemo />} />
     </Routes>
   );
 }
