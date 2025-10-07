@@ -1,6 +1,6 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import { Home, UseReducerDemo, UseReduxDemo } from "./routes";
+import { Home, UseReducerDemo, UseReduxDemo, UseZustandDemo } from "./routes";
 
 function App() {
   return (
@@ -8,6 +8,7 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/useReducer-context" element={<UseReducerDemo />} />
       <Route path="/redux-toolkit" element={<UseReduxDemo />} />
+      <Route path="/zustand" element={<UseZustandDemo />} />
     </Routes>
   );
 }

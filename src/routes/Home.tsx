@@ -10,6 +10,9 @@ export const Home = () => (
       <li>
         <Link to="/redux-toolkit">Redux-Toolkit</Link>
       </li>
+      <li>
+        <Link to="/zustand">Zustand</Link>
+      </li>
     </ul>
   </main>
 );

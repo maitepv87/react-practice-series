@@ -3,7 +3,6 @@ import { AddToCartButton, CartList, CartSummary } from "./components";
 import { CartItem } from "./context/cartReducer";
 
 export const ContextApp = () => {
-  // Simulación de productos disponibles
   const products: CartItem[] = [
     { id: "1", name: "React Book", price: 29.99, quantity: 1 },
     { id: "2", name: "TypeScript Guide", price: 34.99, quantity: 1 },
@@ -13,7 +12,7 @@ export const ContextApp = () => {
   return (
     <CartProvider>
       <main style={{ padding: "2rem" }}>
-        <h1>React Practice Series: Cart Module</h1>
+        <h1>React Practice Series: useReducer + context</h1>
 
         <section>
           <h2>Available Products</h2>

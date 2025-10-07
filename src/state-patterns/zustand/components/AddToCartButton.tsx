@@ -1,15 +1,14 @@
-import { useAppDispatch } from "../store/hooks";
-import { addItem, CartItem } from "../store/slices/cartSlice";
+import { useCartStore, CartItem } from "../store/store";
 
 type Props = {
   item: CartItem;
 };
 
 export const AddToCartButton = ({ item }: Props) => {
-  const dispatch = useAppDispatch();
+  const { addItem } = useCartStore();
 
   const handleClick = () => {
-    dispatch(addItem(item));
+    addItem(item);
   };
 
   return <button onClick={handleClick}>Add to Cart</button>;
