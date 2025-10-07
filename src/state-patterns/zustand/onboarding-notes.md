@@ -21,20 +21,14 @@ Zustand is perfect for small to medium apps that need global state without the s
 Here’s how the folder is organized:
 
 ```
-useReducer-context/
-├── context/
-│   ├── CartContext.tsx         ← Defines the context object
-│   ├── CartProvider.tsx        ← Wraps the app and provides state + dispatch
-│   ├── cartReducer.ts          ← Contains reducer logic and initial state
-│   ├── useCartContext.ts       ← Custom hook to consume context safely
-│   └── actionTypes.ts          ← Centralized constants for action type strings
-├── actions/
-│   └── cartActions.ts          ← Action creators for dispatching typed actions
+zustand/
 ├── components/
-│   ├── AddToCartButton.tsx     ← UI button to add items to cart
-│   ├── CartSummary.tsx         ← Displays total and clear cart button
-│   └── CartList.tsx            ← Lists items in the cart with remove buttons
-├── ContextApp.tsx                 ← Entry point that wires everything together
+│   ├── AddToCartButton.tsx     ← Dispatches addItem to Zustand store
+│   ├── CartList.tsx            ← Displays cart items and dispatches removeItem
+│   └── CartSummary.tsx         ← Shows total and dispatches clearCart
+├── store/
+│   └── store.ts                ← Defines Zustand store with state and actions
+├── ZustandApp.tsx              ← Entry point that wires everything together
 ├── README.md                   ← Technical overview and usage
 └── onboarding-notes.md         ← This file
 
