@@ -21,6 +21,19 @@ Redux Toolkit simplifies Redux by removing manual reducer wiring and action crea
 Here’s how the folder is organized:
 
 ```
+redux-toolkit/
+├── components/
+│   ├── AddToCartButton.tsx     ← Dispatches addItem to Redux store
+│   ├── CartList.tsx            ← Displays cart items and dispatches removeItem
+│   └── CartSummary.tsx         ← Shows total and dispatches clearCart
+├── store/
+│   ├── hooks.ts                ← Typed versions of useDispatch and useSelector
+│   ├── slices/
+│   │   └── cartSlice.ts        ← Defines cart state and actions using createSlice
+│   └── store.ts                ← Configures Redux store with cart reducer
+├── ReduxApp.tsx                ← Entry point that wires everything together
+├── README.md                   ← Technical overview and usage
+└── onboarding-notes.md         ← This file
 
 ```
 
