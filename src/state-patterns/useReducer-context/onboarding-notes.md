@@ -22,17 +22,21 @@ Here’s how the folder is organized:
 
 ```
 useReducer-context/
-├── CartContext.tsx         ← Defines the context object
-├── CartProvider.tsx        ← Wraps the app and provides state + dispatch
-├── cartReducer.ts          ← Contains reducer logic and initial state
-├── useCart.ts              ← Custom hook to consume context safely
+├── context/
+│   ├── CartContext.tsx         ← Defines the context object
+│   ├── CartProvider.tsx        ← Wraps the app and provides state + dispatch
+│   ├── cartReducer.ts          ← Contains reducer logic and initial state
+│   ├── useCartContext.ts       ← Custom hook to consume context safely
+│   └── actionTypes.ts          ← Centralized constants for action type strings
+├── actions/
+│   └── cartActions.ts          ← Action creators for dispatching typed actions
 ├── components/
-│   ├── AddToCartButton.tsx
-│   ├── CartSummary.tsx
-│   └── CartItem.tsx
-├── App.tsx                 ← Entry point that wires everything together
-├── README.md               ← Technical overview and usage
-└── onboarding-notes.md     ← This file
+│   ├── AddToCartButton.tsx     ← UI button to add items to cart
+│   ├── CartSummary.tsx         ← Displays total and clear cart button
+│   └── CartList.tsx            ← Lists items in the cart with remove buttons
+├── CartApp.tsx                 ← Entry point that wires everything together
+├── README.md                   ← Technical overview and usage
+└── onboarding-notes.md         ← This file
 
 ```
 
