@@ -78,3 +78,19 @@ This flow makes state changes predictable and easy to follow.
 ---
 
 👉 In short: this is a simple, scalable approach to managing state in React. Great for practice, production prototypes, or as a stepping stone to more advanced state management solutions.
+
+---
+
+## Comparing Patterns: What comes next?
+
+This module shows how to manage global state with `useReducer` and `useContext`—a clean, lightweight alternative to Redux. But what if your app grows and needs async logic, middleware, or dev tools?
+
+That’s where **Redux Toolkit** comes in.
+
+| Pattern                   | Setup Complexity | Async Support | Dev Tools | Ideal Use Case                      |
+| ------------------------- | ---------------- | ------------- | --------- | ----------------------------------- |
+| `useReducer + useContext` | Low              | Manual        | No        | Small/medium apps, onboarding demos |
+| **Redux Toolkit**         | Medium           | Built-in      | Yes       | Scalable apps with complex logic    |
+| Zustand                   | Very Low         | Built-in      | Optional  | Lightweight global state            |
+
+👉 Up next: [Redux Toolkit →](../redux-toolkit/onboarding-notes.md)

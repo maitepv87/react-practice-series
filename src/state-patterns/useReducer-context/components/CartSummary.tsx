@@ -1,5 +1,5 @@
 import { useCartContext } from "../context/useCartContext";
-import { CLEAR_CART } from "../context/actionTypes";
+import { clearCart } from "../context/actions/cartActions";
 
 export const CartSummary = () => {
   const { state, dispatch } = useCartContext();
@@ -12,7 +12,7 @@ export const CartSummary = () => {
   return (
     <div>
       <p>Total: ${total.toFixed(2)}</p>
-      <button onClick={() => dispatch({ type: CLEAR_CART })}>Clear Cart</button>
+      <button onClick={() => dispatch(clearCart())}>Clear Cart</button>
     </div>
   );
 };

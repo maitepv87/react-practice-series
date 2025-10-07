@@ -1,6 +1,6 @@
 import { useCartContext } from "../context/useCartContext";
 import { CartItem } from "../context/cartReducer";
-import { ADD_ITEM } from "../context/actionTypes";
+import { addItem } from "../context/actions/cartActions";
 
 type Props = {
   item: CartItem;
@@ -10,7 +10,7 @@ export const AddToCartButton = ({ item }: Props) => {
   const { dispatch } = useCartContext();
 
   const handleClick = () => {
-    dispatch({ type: ADD_ITEM, payload: item });
+    dispatch(addItem(item));
   };
 
   return <button onClick={handleClick}>Add to Cart</button>;

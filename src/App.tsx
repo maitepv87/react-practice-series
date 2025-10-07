@@ -1,14 +1,14 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Home } from "./routes";
+import { Routes, Route } from "react-router-dom";
+import { Home } from "./routes/Home";
+import { UseReducerDemo } from "./routes/UseReducerDemo";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/useReducer-context" element={<UseReducerDemo />} />
+    </Routes>
   );
 }
 

@@ -13,7 +13,7 @@ export type CartState = {
 
 export type CartAction =
   | { type: typeof ADD_ITEM; payload: CartItem }
-  | { type: typeof REMOVE_ITEM; payload: { id: string } }
+  | { type: typeof REMOVE_ITEM; payload: string }
   | { type: typeof CLEAR_CART };
 
 export const initialState: CartState = {
@@ -22,7 +22,7 @@ export const initialState: CartState = {
 
 export function cartReducer(state: CartState, action: CartAction): CartState {
   switch (action.type) {
-    case "ADD_ITEM": {
+    case ADD_ITEM: {
       const existing = state.items.find(
         (item) => item.id === action.payload.id
       );
@@ -42,13 +42,13 @@ export function cartReducer(state: CartState, action: CartAction): CartState {
       };
     }
 
-    case "REMOVE_ITEM":
+    case REMOVE_ITEM:
       return {
         ...state,
-        items: state.items.filter((item) => item.id !== action.payload.id),
+        items: state.items.filter((item) => item.id !== action.payload),
       };
 
-    case "CLEAR_CART":
+    case CLEAR_CART:
       return { ...state, items: [] };
 
     default:

@@ -1,5 +1,3 @@
-import { App as CartApp } from "../state-patterns/useReducer-context/App";
+import { CartApp } from "../state-patterns/useReducer-context/CartApp";
 
-export const UseReducerDemo = () => {
-  return <CartApp />;
-};
+export const UseReducerDemo = () => <CartApp />;

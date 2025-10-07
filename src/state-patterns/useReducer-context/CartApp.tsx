@@ -2,10 +2,9 @@ import { CartProvider } from "./context/CartProvider";
 import { AddToCartButton } from "./components/AddToCartButton";
 import { CartList } from "./components/CartList";
 import { CartSummary } from "./components/CartSummary";
-
 import { CartItem } from "./context/cartReducer";
 
-export const App = () => {
+export const CartApp = () => {
   // Simulación de productos disponibles
   const products: CartItem[] = [
     { id: "1", name: "React Book", price: 29.99, quantity: 1 },

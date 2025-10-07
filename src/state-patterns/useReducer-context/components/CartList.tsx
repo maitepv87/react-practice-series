@@ -1,5 +1,5 @@
 import { useCartContext } from "../context/useCartContext";
-import { REMOVE_ITEM } from "../context/actionTypes";
+import { removeItem } from "../context/actions/cartActions";
 
 export const CartList = () => {
   const { state, dispatch } = useCartContext();
@@ -11,13 +11,7 @@ export const CartList = () => {
       {state.items.map((item) => (
         <li key={item.id}>
           {item.name} (${item.price}) × {item.quantity}
-          <button
-            onClick={() =>
-              dispatch({ type: REMOVE_ITEM, payload: { id: item.id } })
-            }
-          >
-            Remove
-          </button>
+          <button onClick={() => dispatch(removeItem(item.id))}>Remove</button>
         </li>
       ))}
     </ul>
