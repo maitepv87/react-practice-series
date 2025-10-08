@@ -16,6 +16,9 @@ export const Home = () => (
       <li>
         <Link to="/api-integration">API Integration</Link>
       </li>
+      <li>
+        <Link to="/layout-system">Layout System</Link>
+      </li>
     </ul>
   </main>
 );

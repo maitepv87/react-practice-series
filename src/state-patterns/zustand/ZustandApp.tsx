@@ -10,7 +10,7 @@ export const ZustandApp = () => {
 
   return (
     <main style={{ padding: "2rem" }}>
-      <h1>React Practice Series: Zustand</h1>
+      <h1>State-Patterns: Zustand</h1>
 
       <section>
         <h2>Available Products</h2>

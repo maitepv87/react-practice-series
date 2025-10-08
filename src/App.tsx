@@ -6,6 +6,7 @@ import {
   UseReducerDemo,
   UseReduxDemo,
   UseZustandDemo,
+  UseLayoutDemo,
 } from "./routes";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Route path="/redux-toolkit" element={<UseReduxDemo />} />
       <Route path="/zustand" element={<UseZustandDemo />} />
       <Route path="/api-integration" element={<UseAPIDemo />} />
+      <Route path="/layout-system" element={<UseLayoutDemo />} />
     </Routes>
   );
 }

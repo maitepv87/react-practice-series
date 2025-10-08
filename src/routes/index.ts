@@ -4,4 +4,6 @@ export * from "./UseReducerDemo";
 export * from "./UseReduxDemo";
 export * from "./UseZustandDemo";
 
-export * from "./UseApiDemo";
+export * from "./UseAPIDemo";
+
+export * from "./UseLayoutDemo";

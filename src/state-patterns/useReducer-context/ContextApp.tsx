@@ -12,7 +12,7 @@ export const ContextApp = () => {
   return (
     <CartProvider>
       <main style={{ padding: "2rem" }}>
-        <h1>React Practice Series: useReducer + context</h1>
+        <h1>State-Patterns: useReducer + context</h1>
 
         <section>
           <h2>Available Products</h2>

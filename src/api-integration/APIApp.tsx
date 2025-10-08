@@ -27,9 +27,6 @@ export const APIApp = () => {
     setResult("");
 
     try {
-
-      console.log("Submitting:", provider, prompt);
-      
       const response = await integrationRouter(provider, prompt);
       setResult(response);
     } catch (err) {

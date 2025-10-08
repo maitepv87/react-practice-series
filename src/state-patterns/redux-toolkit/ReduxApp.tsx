@@ -13,7 +13,7 @@ export const ReduxApp = () => {
   return (
     <Provider store={store}>
       <main style={{ padding: "2rem" }}>
-        <h1>React Practice Series: Redux-Toolkit</h1>
+        <h1>State-Patterns: Redux-Toolkit</h1>
 
         <section>
           <h2>Available Products</h2>
