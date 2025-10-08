@@ -34,7 +34,7 @@ Each module focuses on a specific pattern or capability, and includes:
 
 ---
 
-## 📦 Modules
+## Modules
 
 ### `state-patterns/` — Global State Management
 

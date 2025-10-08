@@ -17,7 +17,7 @@ export const ProviderSelector = ({
         <option value="weather">WeatherAPI - REST/fetch</option>
         <option value="news">NewsAPI - REST/axios</option>
         <option value="countries">Countries API - GraphQL</option>
-        <option value="websocket">Echo - WebSocket</option>
+        <option value="echo">Echo - WebSocket</option>
       </select>
     </div>
   );

@@ -2,7 +2,7 @@ import {
   fetchWeather,
   fetchNews,
   fetchCountries,
-  //   connectEcho,
+  connectEcho,
 } from "../providers";
 
 export const integrationRouter = async (
@@ -16,8 +16,8 @@ export const integrationRouter = async (
       return await fetchNews(prompt);
     case "countries":
       return await fetchCountries(prompt);
-    // case "echo":
-    //   return await connectEcho(prompt);
+    case "echo":
+      return await connectEcho(prompt);
     default:
       throw new Error(`Provider not supported: ${provider}`);
   }
