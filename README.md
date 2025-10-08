@@ -66,10 +66,12 @@ Each module focuses on a specific pattern or capability, and includes:
 
 ---
 
-### `ai-integration/` — AI-Driven Components
+### `api-integration/` — External API Protocols
 
-- Text/image generation via AI APIs
-- Prompt design, fallback UX, and loading boundaries
+- Modular integration of REST (fetch/axios), GraphQL, and WebSocket providers
+- Prompt-driven input with editorial error handling and loading states
+- Scalable routing via integrationRouter.ts and teachable provider structure
+- Designed to reinforce protocol fluency and onboarding clarity
 
 ---
 
