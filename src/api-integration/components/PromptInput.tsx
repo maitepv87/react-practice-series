@@ -12,7 +12,7 @@ export const PromptInput = ({ value, onChange }: PromptInputProps) => {
         type="text"
         value={value}
         onChange={(event) => onChange(event.target.value)}
-        placeholder="Ej: Miami, Bitcoin, United States..."
+        placeholder="Ej: Miami, Florida, USA..."
       />
     </div>
   );

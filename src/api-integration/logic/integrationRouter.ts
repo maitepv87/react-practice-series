@@ -1,7 +1,7 @@
 import {
   fetchWeather,
   fetchNews,
-  //   fetchCountries,
+  fetchCountries,
   //   connectEcho,
 } from "../providers";
 
@@ -14,8 +14,8 @@ export const integrationRouter = async (
       return await fetchWeather(prompt);
     case "news":
       return await fetchNews(prompt);
-    // case "countries":
-    //   return await fetchCountries(prompt);
+    case "countries":
+      return await fetchCountries(prompt);
     // case "echo":
     //   return await connectEcho(prompt);
     default:
