@@ -13,9 +13,9 @@ export const Home = () => (
       <li>
         <Link to="/zustand">Zustand</Link>
       </li>
-      {/* <li>
+      <li>
         <Link to="/api-integration">API Integration</Link>
-      </li> */}
+      </li>
     </ul>
   </main>
 );

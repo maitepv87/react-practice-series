@@ -1,3 +1,3 @@
-import { ApiApp } from "../ai-integration/ApiApp";
+import { APIApp } from "../api-integration/APIApp";
 
-export const UseApiDemo = () => <ApiApp />;
+export const UseAPIDemo = () => <APIApp />;
