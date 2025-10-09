@@ -15,9 +15,22 @@ export const FocusTrapModal: React.FC<FocusTrapModalProps> = ({ onClose }) => {
   }, []);
 
   return (
-    <div ref={modalRef} tabIndex={-1} role="dialog" aria-modal="true">
-      <h2>Modal Title</h2>
-      <p>This modal traps focus and restores it on close.</p>
+    <div
+      ref={modalRef}
+      tabIndex={-1}
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-title"
+      aria-describedby="modal-desc"
+      style={{
+        border: "1px solid #ccc",
+        padding: "1rem",
+        marginTop: "1rem",
+        background: "#f9f9f9",
+      }}
+    >
+      <h2 id="modal-title">Modal Title</h2>
+      <p id="modal-desc">This modal traps focus and restores it on close.</p>
       <button onClick={onClose}>Close</button>
     </div>
   );

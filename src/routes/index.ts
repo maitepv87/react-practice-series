@@ -7,3 +7,5 @@ export * from "./UseZustandDemo";
 export * from "./UseAPIDemo";
 
 export * from "./UseLayoutDemo";
+
+export * from "./UsePerformanceDemo";

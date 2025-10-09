@@ -5,6 +5,7 @@ interface MemoizedListProps {
   items: string[];
 }
 
+// ListItem is memoized to avoid re-rendering unless its props change
 const ListItem: React.FC<{ value: string }> = React.memo(({ value }) => (
   <li>{value}</li>
 ));

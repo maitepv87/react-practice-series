@@ -19,6 +19,9 @@ export const Home = () => (
       <li>
         <Link to="/layout-system">Layout System</Link>
       </li>
+      <li>
+        <Link to="/performance-a11y">Performance a11y</Link>
+      </li>
     </ul>
   </main>
 );

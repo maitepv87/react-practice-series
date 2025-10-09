@@ -22,7 +22,18 @@ This pattern teaches how to build interfaces that are fast, inclusive, and edito
 Here’s how the folder is organized:
 
 ```
-*****
+performance-a11y/
+├── components/
+│   ├── AccessibleButton.tsx     ← Botón accesible con soporte para teclado y lector de pantalla
+│   ├── Chart.tsx                ← Gráfico de líneas con etiquetas accesibles, cargado bajo demanda
+│   ├── FocusTrapModal.tsx       ← Modal con gestión de foco y roles ARIA para accesibilidad
+│   ├── LazyChart.tsx            ← Componente que carga Chart.tsx usando React.lazy y Suspense
+│   └── MemoizedList.tsx         ← Lista optimizada con React.memo y useMemo, incluye profiling visual
+├── utils/
+│   └── useRenderCount.ts        ← Hook para contar renders y visualizar rendimiento en consola
+├── PerformanceA11yApp.tsx       ← Punto de entrada que orquesta los componentes del módulo
+├── README.md                    ← Descripción técnica, propósito editorial y guía de uso
+└── onboarding-notes.md          ← Guía narrativa para entrevistas y documentación de onboarding
 
 ```
 

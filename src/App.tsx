@@ -7,6 +7,7 @@ import {
   UseReduxDemo,
   UseZustandDemo,
   UseLayoutDemo,
+  UsePerformanceDemo,
 } from "./routes";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Route path="/zustand" element={<UseZustandDemo />} />
       <Route path="/api-integration" element={<UseAPIDemo />} />
       <Route path="/layout-system" element={<UseLayoutDemo />} />
+      <Route path="/performance-a11y" element={<UsePerformanceDemo />} />
     </Routes>
   );
 }
